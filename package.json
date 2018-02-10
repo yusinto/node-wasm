@@ -1,6 +1,6 @@
 {
   "name": "node-wasm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A bare minimum util to import and use wasm in node",
   "main": "lib/index.js",
   "scripts": {
