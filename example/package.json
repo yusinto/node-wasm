@@ -20,5 +20,8 @@
     "@babel/core": "^7.0.0-beta.39",
     "@babel/node": "^7.0.0-beta.39",
     "@babel/preset-env": "^7.0.0-beta.39"
+  },
+  "dependencies": {
+    "node-wasm": "^0.1.1"
   }
 }

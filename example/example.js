@@ -1,4 +1,4 @@
-import loadWasm from '../lib/index';
+import loadWasm from 'node-wasm';
 
 async function run() {
   const utils = await loadWasm('./rustUtils.wasm');

@@ -805,6 +805,10 @@ node-modules-regexp@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/node-modules-regexp/-/node-modules-regexp-1.0.0.tgz#8d9dbe28964a4ac5712e9131642107c71e90ec40"
 
+node-wasm@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/node-wasm/-/node-wasm-0.1.1.tgz#2cf0181db816acef2e2c7f0e53d20326166a917a"
+
 normalize-path@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-2.1.1.tgz#1ab28b556e198363a8c1a6f7e6fa20137fe6aed9"
