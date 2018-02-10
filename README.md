@@ -27,5 +27,8 @@ run();
 ```
 
 ## Example
-Check the [example](https://github.com/yusinto/node-wasm/tree/master/example) for a 
-simple demo for now.
+Check the [node example](https://github.com/yusinto/node-wasm/tree/master/example/node) for a 
+simple demo.
+
+The corresponding [rust example](https://github.com/yusinto/node-wasm/tree/master/example/rust) is
+also available for you to play with.
