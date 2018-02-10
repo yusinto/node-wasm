@@ -2,7 +2,7 @@
   "name": "node-wasm",
   "version": "0.1.1",
   "description": "A bare minimum util to import and use wasm in node",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "build": "rimraf lib/* && babel src -d lib --ignore *.test.js",
