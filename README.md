@@ -14,8 +14,6 @@ yarn add node-wasm
 
 ## Quickstart
 
-In your client bootstrap, initialise the launch darkly client by invoking the init method:
-
 ```javascript
 import loadWasm from 'node-wasm';
 
