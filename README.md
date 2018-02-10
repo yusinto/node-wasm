@@ -18,8 +18,8 @@ yarn add node-wasm
 import loadWasm from 'node-wasm';
 
 async function run() {
-  const utils = await loadWasm('/local/path/to/wasm');
-  const result = utils.rust_function();
+  const {rust_function} = await loadWasm('/local/path/to/wasm');
+  const result = rust_function();
   console.log(result);
 }
 

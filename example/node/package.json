@@ -4,7 +4,9 @@
   "description": "Demo of node-wasm usage",
   "main": "example.js",
   "scripts": {
-    "test": "babel-node example"
+    "build-rust": "./build-rust.sh",
+    "test": "npm run build-rust && babel-node example",
+    "dev": "babel-node example"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,6 @@
     "@babel/preset-env": "^7.0.0-beta.39"
   },
   "dependencies": {
-    "node-wasm": "^0.1.1"
+    "node-wasm": "^0.1.2"
   }
 }
