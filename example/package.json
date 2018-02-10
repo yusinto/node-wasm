@@ -1,0 +1,24 @@
+{
+  "name": "node-wasm-example",
+  "version": "1.0.0",
+  "description": "Demo of node-wasm usage",
+  "main": "example.js",
+  "scripts": {
+    "test": "babel-node example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yusinto/node-wasm.git"
+  },
+  "author": "Yusinto Ngadiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yusinto/node-wasm/issues"
+  },
+  "homepage": "https://github.com/yusinto/node-wasm#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/node": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39"
+  }
+}

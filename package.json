@@ -1,0 +1,39 @@
+{
+  "name": "node-wasm",
+  "version": "0.1.0",
+  "description": "A bare minimum util to import and use wasm in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf lib/* && babel src -d lib --ignore *.test.js",
+    "lint": "eslint --cache --format 'node_modules/eslint-friendly-formatter' ./src",
+    "prep-publish": "npm run build && npm version patch -m 'Upgrade to %s' && npm publish && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusinto/node-wasm.git"
+  },
+  "keywords": [
+    "node",
+    "import",
+    "require",
+    "wasm",
+    "loader",
+    "node-wasm",
+    "nodewasm",
+    "load"
+  ],
+  "author": "Yusinto Ngadiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yusinto/node-wasm/issues"
+  },
+  "homepage": "https://github.com/yusinto/node-wasm#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.39",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/node": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "rimraf": "^2.6.2"
+  }
+}
