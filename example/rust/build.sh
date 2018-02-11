@@ -1,4 +1,4 @@
-!#bash
+#!/usr/bin/env bash
 
 rustup toolchain install nightly
 rustup update

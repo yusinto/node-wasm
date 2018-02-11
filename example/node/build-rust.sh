@@ -1,4 +1,4 @@
-!#bash
+#!/usr/bin/env bash
 
 cd ../rust
 rustup toolchain install nightly
