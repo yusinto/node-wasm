@@ -4,15 +4,13 @@ Minimal rust project which compiles to wasm for use in the node example project.
 
 ## Running the project
 
-1. Install rust.
+1. Install rust. Once done, restart terminal:
 
     ```bash
     curl https://sh.rustup.rs -sSf | sh
     ```
    
-   Once done, restart terminal.
-   
-2. Edit the rust code under `src/lib.rs` if you want to change/add functionality.
+2. Edit the rust code under `src/lib.rs` if you want to change/add functionality:
 
     ```rust
     // you need no_mangle to preserve your function name
@@ -22,7 +20,7 @@ Minimal rust project which compiles to wasm for use in the node example project.
     }
     ```
     
-3. Compile rust to wasm.
+3. Compile rust to wasm:
 
     ```
     ./build.sh
