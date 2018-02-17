@@ -1,16 +1,10 @@
 import fs from 'fs';
+import path from 'path';
 
-// const imports = {
-//   env: {
-//     memoryBase: 0,
-//     tableBase: 0,
-//     memory: new WebAssembly.Memory({initial: 256}),
-//     table: new WebAssembly.Table({initial: 0, element: 'anyfunc'}),
-//   }
-// };
+const cache = {};
 
-const readFileAsByteArray = (path) => {
-  const bytes = fs.readFileSync(path);
+const readFileAsByteArray = (filepath) => {
+  const bytes = fs.readFileSync(filepath);
   return new Uint8Array(bytes);
 };
 
@@ -19,8 +13,16 @@ const instantiate = async (byteArray) => {
   return new WebAssembly.Instance(module);
 };
 
-export default async (path) => {
-  const byteArray = readFileAsByteArray(path);
-  const instance = await instantiate(byteArray);
-  return instance.exports;
+export default async (filepath) => {
+  const resolvedPath = path.resolve(filepath);
+
+  const cached = cache[resolvedPath];
+  if(cached) {
+    return cached;
+  }
+
+  const byteArray = readFileAsByteArray(resolvedPath);
+  const {exports} = await instantiate(byteArray);
+  cache[resolvedPath] = exports;
+  return exports;
 };
