@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/node-wasm.svg?style=flat-square)](https://www.npmjs.com/package/node-wasm) [![npm downloads](https://img.shields.io/npm/dm/node-wasm.svg?style=flat-square)](https://www.npmjs.com/package/node-wasm) [![npm](https://img.shields.io/npm/dt/node-wasm.svg?style=flat-square)](https://www.npmjs.com/package/node-wasm) [![npm](https://img.shields.io/npm/l/node-wasm.svg?style=flat-square)](https://www.npmjs.com/package/node-wasm)
 
-> **Bare minimum util to import and use wasm in node** :bullettrain_front:
+> **Bare minimum util to import and use wasm in node** :speedboat:
 
 This is still work in progress.
 
